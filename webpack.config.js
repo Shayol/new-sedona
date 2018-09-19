@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const postcssPresetEnv = require('postcss-preset-env');
 
@@ -29,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        //exclude: /index\.html$/, //without this HtmlWebPackPlugin will not work with template file correctly
+        // exclude: /index\.html$/, //without this HtmlWebPackPlugin will not work with template file correctly
         include: path.join(__dirname, 'src/html'),
         use: [
           {
@@ -74,7 +75,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|svg)$/,
         use: {
           loader: "file-loader",
           options: {
@@ -87,10 +88,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      title: 'Title',
+      title: 'Index',
       template: "./src/html/index.html",
       filename: "./index.html"
     }),
+    new HtmlWebpackInlineSVGPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].css",
     })

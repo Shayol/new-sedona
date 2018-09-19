@@ -1,5 +1,5 @@
 {
-  "name": "webpack-demo",
+  "name": "sedona",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,6 +20,7 @@
     "css-loader": "^1.0.0",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
+    "html-webpack-inline-svg-plugin": "^1.2.4",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.8.3",

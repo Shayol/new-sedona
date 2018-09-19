@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Example</title>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
 </head>
+
 <body>
-    
+    <div class="container">
+        ${require(`./partials/mobile-menu.html`)}
+        ${require(`./partials/top-menu.html`)}
+        ${require(`./partials/hero.html`)}
+
+        <div class="section section__textual textual">
+            <h2 class="header">
+                СЕДОНА — небольшой
+                городок в АРИЗОНЕ,
+                зАСЛУЖИвающий большего!
+            </h2>
+
+            <p class="text">
+                Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
+            </p>
+        </div>
+        <div class="section section__section-with-photo section-with-photo">
+            <div class="section-with-photo__content">
+                <h2 class="header section-with-photo__header">
+                    НАСТОЯЩИЙ ГОРОДОК
+                </h2>
+
+                <p class="text section-with-photo__number section-with-photo__text">
+                    — №1 —
+                </p>
+
+                <p class="text section-with-photo__text">
+                    СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+                </p>
+            </div>
+            <img src="../img/photo-city@1x.png" alt="city photo" class="section-with-photo__photo">
+
+
+        </div>
+        <div class="section section__section-with-advantages section-with-advantages">
+            <div class="section-with-advantages__subsection subsection--row-on-mobile">
+                <img src="../icons/icon-house.svg" alt="" class="section-with-advantages__icon">
+                <h2 class="header">
+                    Жилье
+                </h2>
+
+                <div class="text">
+                    Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </div>
+            </div>
+
+            <div class="section-with-advantages__subsection subsection--row-on-mobile">
+                <img src="../icons/icon-gift.svg" alt="" class="section-with-advantages__icon">
+                <h2 class="header">
+                    СУВЕНИРЫ
+                </h2>
+
+                <div class="text">
+                    Не только китайского, но и местного производства!
+                </div>
+            </div>
+
+            <div class="section-with-advantages__subsection subsection--row-on-mobile">
+                <img src="../icons/icon-burger.svg" alt="" class="section-with-advantages__icon">
+                <h2 class="header">
+                    ЕДА
+                </h2>
+
+                <div class="text">
+                    Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section section__section-with-photo section-with-photo">
+            <div class="header section-with-photo__header">
+                ТАМ ЕСТЬ Мост дьявола
+            </div>
+
+            <div class="text section-with-photo__number section-with-photo__text">
+                — №2 —
+            </div>
+
+            <p class="text section-with-photo__text">
+                Да, по нему можно пройти! Если вы осмелитесь, конечно
+            </p>
+            <img src="../img/photo-bridge@1x.png" alt="bridge photo" class="section-with-photo__photo">
+        </div>
+
+        <div class="section section__section-with-advantages section-with-advantages">
+            <div class="section-with-advantages__subsection">
+                <h2 class="header">
+                    НЕБОЛЬШАЯ ПЛОЩАДЬ
+                </h2>
+
+                <div class="text">
+                    — №3 —
+                </div>
+
+                <div class="text">
+                    ВСЕ интересные места находятся очень близко
+                </div>
+            </div>
+
+            <div class="section-with-advantages__subsection">
+                <h2 class="header">
+                    КРАСИВАЯ ДОРОГА
+                </h2>
+
+                <div class="text">
+                    — №4 —
+                </div>
+
+                <div class="text">
+                    ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА
+                    совсем НЕ СКУЧНО!
+                </div>
+            </div>
+
+            <div class="section-with-advantages__subsection">
+                <h2 class="header">
+                    МАЛО ТУРИСТОВ
+                </h2>
+
+                <div class="text">
+                    — №5 —
+                </div>
+
+                <div class="text">
+                    Большинство едет в гранд каньон
+                    и толпится там
+                </div>
+            </div>
+        </div>
+        <div class="section section__section-interested section-interested">
+            <div class="section-interested__content">
+                <h3 class="header header--big">
+                    ЗАИНТЕРЕСОВАЛИСЬ?
+                </h3>
+
+                <p class="text">
+                    Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+                </p>
+
+                <button class="button-squire section-interested__button">
+                    НАЙТИ гостиницу
+                </button>
+            </div>
+        </div>
+        <div class="section section__map map">
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620914.9176854424!2d-113.10135981937023!3d34.70859532910405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sua!4v1534580525025"
+                width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        ${require(`./partials/footer.html`)}
+    </div>
 </body>
+
 </html>

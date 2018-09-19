@@ -1,0 +1,27 @@
+.top-menu {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+
+    &__item {
+        display: none;
+    }
+
+    &__open {
+        position: absolute;
+        right: 20px;
+        top: 17px;
+    }
+
+    &__logo {
+        width: 100px;
+    }
+    
+     @media(min-width: $tablet) {
+        &__item {
+            display: block;
+        } 
+     }
+}

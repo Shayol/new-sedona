@@ -1,0 +1,10 @@
+.page {
+    &__top-menu {
+        height: 56px;
+    }
+    &\--index {
+        .page__hero {
+            height: 390px;
+        }
+    }
+}

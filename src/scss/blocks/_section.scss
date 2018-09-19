@@ -1,0 +1,17 @@
+.section {
+    padding: 0 20px;
+    position: relative;
+
+    &\--full-width {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &\--textual::after {
+        position: absolute;
+        bottom: -3px;
+        // content: url("../icons/intro-triangle.svg");
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

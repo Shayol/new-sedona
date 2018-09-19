@@ -1,0 +1,28 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/back.png");
+    background-color: red;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &__text {
+        width: 100%;
+        max-width: 460px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 55%;
+        max-height: 350px;
+    }
+
+    &::after {
+        position: absolute;
+        bottom: -3px;
+        content: url("../icons/intro-triangle.svg");
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 1px solid white;
+    }
+}

@@ -1,0 +1,16 @@
+.section-with-list {
+
+    background-color: #eeeeee;
+    
+    &__subsection {
+        padding: 28px 20px 30px 20px;
+
+    }
+
+    &__number {
+        padding-top: 10px;
+        line-height: 18px;
+    }
+
+
+}

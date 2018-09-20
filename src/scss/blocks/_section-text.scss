@@ -1,6 +1,10 @@
 .section-text {
     padding-top: 14px;
-    line-height: 26px;
+    line-height: 21px;
     text-transform: uppercase;
     text-align: center;
+
+    &\--big {
+        line-height: 26px;
+    }
 }

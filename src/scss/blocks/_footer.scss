@@ -1,0 +1,19 @@
+.footer {
+    padding: 28px 20px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__header {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+    &__item + &__item {
+        margin-top: 38px;
+    }
+}

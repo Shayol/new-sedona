@@ -1,0 +1,16 @@
+.social {
+    display: flex;
+    justify-content: center;
+    &__icon {
+        height: 48px;
+        width: 46px;
+        background-color: $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon + &__icon {
+        margin-left: 6px;
+    }
+}

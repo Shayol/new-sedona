@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     background-image: url("../img/back.png");
-    background-color: red;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
@@ -19,10 +18,22 @@
 
     &::after {
         position: absolute;
-        bottom: -3px;
-        content: url("../icons/intro-triangle.svg");
-        left: 50%;
-        transform: translateX(-50%);
-        border-bottom: 1px solid white;
+        bottom: -1px;
+        content: '';
+        background-image: url("../icons/intro-triangle.svg");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: initial;
+        width: 100%;
+        height: 57px;
+    }
+
+    @media(min-width: $tablet) {
+        &__text {
+            height: 100%;
+        }
+        &::after {
+            // bottom: 0;
+        }
     }
 }

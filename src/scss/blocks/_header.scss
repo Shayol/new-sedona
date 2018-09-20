@@ -8,4 +8,8 @@
     &\--big {
         padding-bottom: 14px;
     }
+
+    @media(min-width: $tablet) {
+        font-size: 21px;
+    }
 }

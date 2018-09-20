@@ -30,6 +30,24 @@
     }
 
     @media(min-width: $tablet) {
-        height: 256px;
+        display: flex;
+
+        &__content {
+            flex-basis: 33.33%;
+        }
+        &__photo-wrapper { 
+            height: 256px;
+            flex-grow: 1;
+        }
+
+        &__header {
+            width: 66.25%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__text {
+            width: $text-width;
+            padding-top: 18px;
+        }
     }
 }

@@ -14,4 +14,7 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    @media(min-width: $tablet) {
+        padding: 0;
+    }
 }

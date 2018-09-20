@@ -10,4 +10,12 @@
     &__footer {
         height: 240px;
     }
+
+    @media(min-width: $tablet) {
+        &\--index {
+            .page__hero {
+                height: 518px;
+            }
+        }
+    }
 }

@@ -1,8 +1,24 @@
 .section-with-advantages {
     padding-bottom: 36px;
     padding-top: 36px;
+
     &__icon {
         margin-top: -5px;
+
+        &\--house {
+            height: 37px;
+            width: 38px;
+        }
+
+        &\--gift {
+            width: 32px;
+            height: 38px;
+        }
+
+        &\--burger {
+            width: 40px;
+            height: 35px;                
+        }
     }
 
     &__subsection {
@@ -12,7 +28,7 @@
         padding-right: 7%;
     }
 
-    &__subsection + &__subsection {
+    &__subsection+&__subsection {
         padding-top: 30px;
     }
 
@@ -27,8 +43,65 @@
     &__text {
         text-align: left;
     }
+
+    @media(min-width: $tablet) {
+        padding: 0;
+        display: flex;
+
+        &__subsection {
+            display: initial;
+            flex-basis: 33.33%;
+            padding: 60px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &::nth-child(2) {
+                order: 1;
+            }
+        }
+
+        &__subsection+&__subsection {
+            padding: 60px 0;
+        }
+
+
+        &__icon {
+            margin-top: initial;
+            margin-bottom: 30px;
+
+            &\--house {
+                width: 75px;
+                height: 72px;               
+            }
+
+            &\--gift {
+                width: 32px;
+                height: 38px;
+            }
+
+            &\--gift {
+                width: 64px;
+                height: 75px;
+            }
+
+            &\--burger {
+                width: 77px;
+                height: 68px;                
+            }
+        }
+
+        &__content {
+            width: $text-width;
+        }
+
+        &__header {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
 }
-
-
-  
-  

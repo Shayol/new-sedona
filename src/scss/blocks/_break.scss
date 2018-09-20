@@ -1,0 +1,9 @@
+.break {
+
+    @media(min-width: $tablet) {
+        &\--visible-on-mobile {
+            display: none;
+        }
+    }
+    
+}

@@ -12,5 +12,26 @@
         line-height: 18px;
     }
 
+    @media(min-width: $tablet) {
+        display: flex;
+        &__subsection {
+            flex-basis: 33.33%;
+            padding: 48px 0 44px 0;
+        }
+
+        &__header {
+            width: $tablet-text-width;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__text {
+            width: $tablet-text-width;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__number {
+            padding-bottom: 8px;
+        }
+    }
 
 }

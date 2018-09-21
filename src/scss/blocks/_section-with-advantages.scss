@@ -57,7 +57,7 @@
             align-items: center;
             justify-content: center;
 
-            &::nth-child(2) {
+            &:nth-child(2) {
                 order: 1;
             }
         }
@@ -69,7 +69,7 @@
 
         &__icon {
             margin-top: initial;
-            margin-bottom: 30px;
+            margin-bottom: 28px;
 
             &\--house {
                 width: 75px;
@@ -77,27 +77,25 @@
             }
 
             &\--gift {
-                width: 32px;
-                height: 38px;
-            }
-
-            &\--gift {
+                margin-top: -3px;
                 width: 64px;
                 height: 75px;
             }
 
             &\--burger {
+                margin-top: 3px;
                 width: 77px;
                 height: 68px;                
             }
         }
 
         &__content {
-            width: $text-width;
+            width: $tablet-text-width;
         }
 
         &__header {
             text-align: center;
+            padding-bottom: 8px;
         }
 
         &__text {

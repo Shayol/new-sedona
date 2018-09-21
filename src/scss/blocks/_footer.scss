@@ -16,4 +16,13 @@
     &__item + &__item {
         margin-top: 38px;
     }
+
+    @media(min-width: $tablet) {
+        flex-direction: row;
+        padding: 36px 60px;
+
+        &__item + &__item {
+            margin-top: 0;
+        }
+    }
 }

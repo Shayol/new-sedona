@@ -10,4 +10,18 @@
         margin-top: 34px;
         width: 100%;
     }
+
+    @media(min-width: $tablet) {
+        padding: 55px 0 58px 0; 
+        &__header {
+            font-size: 30px;
+            padding-bottom: 18px;
+        }
+        &__button {
+            margin-top: 40px;
+            width: 458px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }

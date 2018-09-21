@@ -34,6 +34,9 @@
 
         &__content {
             flex-basis: 33.33%;
+            &\--bridge {
+                order: 1;
+            }
         }
         &__photo-wrapper { 
             height: 256px;
@@ -46,7 +49,7 @@
             margin-right: auto;
         }
         &__text {
-            width: $text-width;
+            width: $tablet-text-width;
             padding-top: 18px;
         }
     }

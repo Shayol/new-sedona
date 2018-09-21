@@ -1,4 +1,5 @@
 .button-squire {
+    display: block;
     background-color: $blue;
     padding-top: 15px;
     padding-bottom: 17px;
@@ -8,4 +9,6 @@
     text-transform: uppercase;
     border: none;
     outline: none;
+    font-weight: 700;
+    font-family: 'PT Sans';
 }

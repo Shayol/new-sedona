@@ -1,7 +1,21 @@
 .break {
 
+    &\--invisible-on-mobile {
+        display: none;
+    }
+
     @media(min-width: $tablet) {
         &\--visible-on-mobile {
+            display: none;
+        }
+        
+        &\--invisible-on-mobile {
+            display: initial;
+        }
+    }
+
+    @media(min-width: $desktop) {
+        &--invisible-on-desktop {
             display: none;
         }
     }

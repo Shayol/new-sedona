@@ -93,6 +93,11 @@ module.exports = {
       template: "./src/html/index.html",
       filename: "./index.html"
     }),
+    new HtmlWebPackPlugin({
+      title: 'Form',
+      template: "./src/html/form.html",
+      filename: "./form.html"
+    }),
     new HtmlWebpackInlineSVGPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].css",

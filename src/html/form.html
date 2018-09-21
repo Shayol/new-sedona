@@ -57,7 +57,8 @@
                         Контактный телефон*:
                     </label>
                     <div class="contacts-form-section__input-wrapper contacts-form-section__input-wrapper--phone">
-                        <input type="text" class="form__input form__text-input contacts-form-section__input" placeholder="Введите телефон">
+                        <input type="text" class="form__input form__text-input contacts-form-section__input"
+                            placeholder="Введите телефон">
                     </div>
                 </div>
                 <div class="contacts-form-section__field">
@@ -65,51 +66,96 @@
                         Электронная почта*:
                     </label>
                     <div class="contacts-form-section__input-wrapper contacts-form-section__input-wrapper--email">
-                        <input type="text" class="form__input form__text-input contacts-form-section__input" placeholder="Введите e-mail">
+                        <input type="text" class="form__input form__text-input contacts-form-section__input"
+                            placeholder="Введите e-mail">
                     </div>
                 </div>
                 <div class="section form__section form__impression impression-form-section">
                     <h2 class="form__header impression-form-section__header">
-
+                        Ваше общее впечатление
                     </h2>
                     <div class="impression-form-section__content">
                         <div class="impression-form-section__field">
-                            <div class="impression-form-section__radio-wrapper"><input type="radio" name="" id="" class="impression-form-section__radio"></div>
-                            <label for="" class="form__label form__label--bold impression-from-section__label"></label>
+                            <div class="impression-form-section__radio-wrapper">
+                                <input type="radio" name="" id="" class="impression-form-section__radio" checked>
+                            </div>
+                            <label for="" class="form__label form__label--bold impression-from-section__label">
+                                Скорее положительное
+                            </label>
                         </div>
                         <div class="impression-form-section__field">
-                            <div class="impression-form-section__radio-wrapper"><input type="radio" name="" id="" class="impression-form-section__radio"></div>
-                            <label for="" class="form__label form__label--bold impression-from-section__label"></label>
+                            <div class="impression-form-section__radio-wrapper">
+                                <input type="radio" name="" id="" class="impression-form-section__radio">
+                            </div>
+                            <label for="" class="form__label form__label--bold impression-from-section__label">
+                                Скорее отрицательное
+                            </label>
                         </div>
                         <div class="impression-form-section__field">
-                            <div class="impression-form-section__radio-wrapper"><input type="radio" name="" id="" class="impression-form-section__radio"></div>
-                            <label for="" class="form__label form__label--bold impression-from-section__label"></label>
+                            <div class="impression-form-section__radio-wrapper">
+                                <input type="radio" name="" id="" class="impression-form-section__radio">
+                            </div>
+                            <label for="" class="form__label form__label--bold impression-from-section__label">
+                                Затрудняюсь ответить
+                            </label>
                         </div>
                     </div>
                 </div>
                 <div class="section form__section form__places places-form-section">
-                        <h2 class="form__header places-form-section__header">
-    
-                        </h2>
-                        <div class="places-form-section__content">
-                                <div class="places-form-section__field">
-                                    <div class="places-form-section__checkbox-wrapper"><input type="checkbox" name="" id="" class="places-form-section__checkbox"></div>
-                                    <label for="" class="form__label form__label--bold places-from-section__label"></label>
-                                </div>
-                                <div class="places-form-section__field">
-                                    <div class="places-form-section__checkbox-wrapper"><input type="checkbox" name="" id="" class="places-form-section__checkbox"></div>
-                                    <label for="" class="form__label form__label--bold places-from-section__label"></label>
-                                </div>
-                                <div class="places-form-section__field">
-                                    <div class="places-form-section__checkbox-wrapper"><input type="checkbox" name="" id="" class="places-form-section__checkbox"></div>
-                                    <label for="" class="form__label form__label--bold places-from-section__label"></label>
-                                </div>
-                                <div class="places-form-section__field">
-                                    <div class="places-form-section__checkbox-wrapper"><input type="checkbox" name="" id="" class="places-form-section__checkbox"></div>
-                                    <label for="" class="form__label form__label--bold places-from-section__label"></label>
-                                </div>
+                    <h2 class="form__header places-form-section__header">
+                        Посещенные достопримечательности
+                    </h2>
+                    <div class="places-form-section__content">
+                        <div class="places-form-section__field">
+                            <div class="places-form-section__checkbox-wrapper">
+                                <input type="checkbox" name="" id="" class="places-form-section__checkbox" checked>
+                            </div>
+                            <label for="" class="form__label form__label--bold places-from-section__label">
+                                Мост Дьявола
+                            </label>
+                        </div>
+                        <div class="places-form-section__field">
+                            <div class="places-form-section__checkbox-wrapper">
+                                <input type="checkbox" name="" id="" class="places-form-section__checkbox" checked>
+                            </div>
+                            <label for="" class="form__label form__label--bold places-from-section__label">
+                                Слайд-парк
+                            </label>
+                        </div>
+                        <div class="places-form-section__field">
+                            <div class="places-form-section__checkbox-wrapper"><input type="checkbox" name="" id=""
+                                    class="places-form-section__checkbox">
+                            </div>
+                            <label for="" class="form__label form__label--bold places-from-section__label">
+                                Гора Колокол
+                            </label>
+                        </div>
+                        <div class="places-form-section__field">
+                            <div class="places-form-section__checkbox-wrapper">
+                                <input type="checkbox" name="" id="" class="places-form-section__checkbox checked">
+                            </div>
+                            <label for="" class="form__label form__label--bold places-from-section__label">
+                                Красные скалы
+                            </label>
                         </div>
                     </div>
+                </div>
+                <div class="section form__section feedback-form-section">
+                    <h2 class="form__header feedback-form-section__header">
+                        Опишите свои эмоции
+                    </h2>
+                    <textarea name="feedback" id="" cols="30" rows="10" class="form__textarea feedback-from-section__textarea">
+                        Опишите подробно все свои восторги 
+                    </textarea>
+                </div>
+                <div class="form__section form__bottom">
+                    <button class="form__submit button-squire">
+                        отправить отзыв
+                    </button>
+                    <p class="form__required-fields">
+                        * — обязательные поля
+                    </p>
+                </div>
         </form>
 
         ${require(`./partials/footer.html`)}

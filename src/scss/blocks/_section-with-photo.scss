@@ -21,9 +21,11 @@
         height: 260px;
         background-repeat: no-repeat;
         background-position: 50% 50%;
+
         &\--city {
             background-image: url("../img/photo-city@1x.png");
         }
+
         &\--bridge {
             background-image: url("../img/photo-bridge@1x.png");
         }
@@ -34,11 +36,18 @@
 
         &__content {
             flex-basis: 33.33%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
             &\--bridge {
                 order: 1;
             }
         }
-        &__photo-wrapper { 
+
+        &__photo-wrapper {
             height: 256px;
             flex-grow: 1;
         }
@@ -48,6 +57,7 @@
             margin-left: auto;
             margin-right: auto;
         }
+
         &__text {
             width: $tablet-text-width;
             padding-top: 18px;

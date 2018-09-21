@@ -102,4 +102,19 @@
             text-align: center;
         }
     }
+
+    @media(min-width: $desktop) {
+        &__content {
+            width: $desktop-text-width;
+        }
+
+        &__subsection { 
+            padding-bottom: 82px;
+        }
+
+        &__subsection+&__subsection {
+            padding-bottom: 82px;
+        }
+
+    }
 }

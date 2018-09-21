@@ -24,4 +24,11 @@
             margin-right: auto;
         }
     }
+
+    @media(min-width: $desktop) {
+        padding-bottom: 66px; 
+        &__button {
+            margin-top: 46px;
+        }
+    }
 }

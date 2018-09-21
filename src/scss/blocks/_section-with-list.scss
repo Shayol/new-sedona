@@ -34,4 +34,14 @@
         }
     }
 
+    @media(min-width: $desktop) {
+        &__subsection {
+            padding-bottom: 64px;
+        }
+
+        &__text {
+            width: $desktop-text-width;
+        }
+    }
+
 }

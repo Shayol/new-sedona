@@ -25,4 +25,20 @@
             margin-top: 0;
         }
     }
+
+    @media(min-width: $desktop) {
+        padding: 36px 0 36px 0;
+
+        &__header {
+            margin-left: 11%;
+        }
+
+        &__developed-by {
+            margin-right: 3.6%;
+        }
+
+        &__social {
+            margin-left: -8.5%;
+        }
+    }
 }

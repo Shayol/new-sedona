@@ -60,4 +60,10 @@
             transform: translateX(-50%);
         }
     }
+    @media(min-width: $desktop) {
+        &__logo-wrapper {
+            padding-left: 2.25%;
+            padding-right: 2.25%;
+        }
+    }
 }

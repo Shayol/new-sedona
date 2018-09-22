@@ -37,4 +37,14 @@
             background-repeat: no-repeat;
         }
     }
+
+    @media(min-width: $tablet) {
+        &__field + &__field {
+            padding-top: 25px;
+        }
+
+        &__header {
+            white-space: nowrap;
+        }
+    }
 }

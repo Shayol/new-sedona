@@ -1,7 +1,11 @@
 .feedback-form-section {
+
+    &__header {
+        white-space: nowrap;
+    }
     &__textarea {
         width: 100%;
-        padding: 22px 28px;
+        padding: 28px 22px;
         outline: none;
         background-color: $grey;
         border: none;
@@ -13,6 +17,12 @@
             line-height: 26px;
             color: black;
             font-family: 'PT Sans';
+        }
+    }
+
+    @media(min-width: $tablet) {
+        &__textarea {
+            padding: 18px 22px;
         }
     }
 }

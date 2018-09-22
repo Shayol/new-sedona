@@ -48,6 +48,12 @@
             }
         }
 
+        &\--form {
+            .page__hero {
+                height: 290px;
+            }
+        }
+
         &__footer {
             height: initial;
         }

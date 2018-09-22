@@ -56,4 +56,21 @@
     &__radio:checked~&__check {
         visibility: visible;
     }
+
+    @media(min-width: $tablet) {
+
+        &__field+&__field {
+            padding-top: 22px;
+        }
+
+        &__field {
+            justify-content: flex-start;
+        }
+
+        &__label {
+            flex-basis: auto;
+            padding-left: 20px;
+        }
+    }
+
 }

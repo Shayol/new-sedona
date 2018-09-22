@@ -72,4 +72,104 @@
         border-top: none;
     }
 
+    @media(min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 60px;
+        padding-right: 60px;
+
+        &__section {
+            width: 100%;
+            padding-bottom: 80px;
+            padding-top: 70px;
+            position: relative;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__impression {
+            order: 1;
+            border-top: none;
+            width: 50%;
+        }
+
+        &__name {
+            border-top: none;
+            width: 50%;
+            padding-left: 58px;
+            order: 2;
+        }
+
+        &__textual {
+            padding-top: 76px;
+            padding-bottom: 86px;
+            order: 0;
+            max-width: 440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__contacts {
+            order: 3;
+            padding-top: 36px;
+        }
+
+        &__places {
+            order: 4;
+        }
+
+        &__feedback {
+            order: 5;
+            padding-bottom: 0;
+        }
+
+        &__bottom {
+            order: 6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 58px;
+            padding-bottom: 60px;
+        }
+
+        &__header {
+            font-size: 21px;
+            position: absolute;
+            top: 0;
+            transform: translateY(-50%);
+            padding-bottom: 0;
+            background-color: white;
+
+            &\--center-aligned {
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+        }
+
+        &__textual-header {
+            font-size: 30px;
+            padding-bottom: 30px;
+            position: initial;
+        }
+
+        &__text-input {
+            height: 58px;
+        }
+
+        &__submit {
+            width: 50%;
+        }
+
+        &__required-fields {
+            display: initial;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: #333;
+        }
+    }
+
 }

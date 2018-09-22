@@ -73,4 +73,20 @@
         }
     }
 
+    @media(min-width: $desktop) {
+
+        &__header {
+            left: 80px;
+        }
+
+        &__radio-wrapper {
+            flex-basis: 80px;
+        }
+
+        &__label {
+            padding-left: 0;
+        }
+     }
+
+
 }

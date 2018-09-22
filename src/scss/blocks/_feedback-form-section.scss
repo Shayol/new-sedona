@@ -10,12 +10,13 @@
         background-color: $grey;
         border: none;
         height: 160px;
+        color: black;
 
         &::placeholder {
+            color: black;
             font-size: 18px;
             font-weight: 700;
             line-height: 26px;
-            color: black;
             font-family: 'PT Sans';
         }
     }

@@ -71,7 +71,6 @@
         }
 
         &__field {
-            // height: 50%;
             width: 50%;
             justify-content: flex-start;
             white-space: nowrap;
@@ -88,6 +87,26 @@
             padding-left: 24px;
             padding-right: 0;
             flex-basis: auto;
+        }
+    }
+
+    @media(min-width: $desktop) {
+        &__content {
+            height: 55px;
+            width: 100%;
+        }
+
+        &__checkbox-wrapper {
+            width: 80px;
+        }
+
+        &__field {
+            height: 100%;
+            width: 25%;
+
+            &:nth-child(3), &:nth-child(4) {
+                padding-left: 0;
+            }
         }
     }
 }

@@ -1,0 +1,75 @@
+.form {
+    &__section {
+        padding-bottom: 25px;
+        padding-top: 20px;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    &__header {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #333333;
+        padding-right: 16px;
+
+        &\--bold {
+            font-weight: 700;
+            text-transform: none;
+        }
+    }
+
+    &__textual {
+        padding-top: 40px;
+        padding-bottom: 18px;
+    }
+
+    &__textual-text {
+        line-height: 24px;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    &__text-input {
+        height: 58px;
+        background-color: $grey;
+        padding: 0 22px;
+        border: none;
+        outline: none;
+
+        &::placeholder {
+            color: black;
+            font-family: "PT Sans";
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+        }
+    }
+
+    &__submit {
+        width: 100%;
+    }
+
+    &__required-fields {
+        display: none;
+    }
+
+    &__bottom {
+        padding-top: 25px;
+        padding-bottom: 44px;
+        border-top: none;
+    }
+
+}

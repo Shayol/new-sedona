@@ -1,0 +1,59 @@
+.places-form-section {
+    &__field+&__field {
+        padding-top: 25px;
+    }
+
+    &__field {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__label {
+        flex-basis: 75%;
+        padding-left: 8px;
+        font-size: 18px;
+    }
+
+    &__checkbox {
+        width: 55px;
+        height: 55px;
+        margin: 0;
+        opacity: 0;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__checkbox-wrapper {
+        width: 55px;
+        height: 55px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 55px;
+            height: 55px;
+            background-color: $grey;
+        }
+    }
+
+    &__check {
+        position: absolute;
+        visibility: hidden;
+        content: '';
+        top: 17px;
+        left: 22px;
+        width: 12px;
+        height: 18px;
+        transform: rotate(45deg);
+        border-right: 2px solid #302c2d;
+        border-bottom: 2px solid #302c2d;
+    }
+
+    &__checkbox:checked~&__check {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,59 @@
+.impression-form-section {
+    &__field+&__field {
+        padding-top: 14px;
+    }
+
+    &__field {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__label {
+        flex-basis: 75%;
+        padding-left: 8px;
+        font-size: 18px;
+    }
+
+    &__radio {
+        width: 55px;
+        height: 55px;
+        margin: 0;
+        opacity: 0;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__radio-wrapper {
+        width: 55px;
+        height: 55px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 55px;
+            border-radius: 50%;
+            height: 55px;
+            background-color: $grey;
+        }
+    }
+
+    &__check {
+        position: absolute;
+        visibility: hidden;
+        content: '';
+        top: 17.5px;
+        left: 17.5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #333333;
+    }
+
+    &__radio:checked~&__check {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,13 @@
+.name-form-section {
+    &__field {
+        display: flex;
+        align-items: center;
+    }
+
+    &__field + &__field {
+        padding-top: 20px;
+    }
+    &__input {
+        flex-grow: 1;
+    }
+}

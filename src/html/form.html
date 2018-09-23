@@ -10,65 +10,70 @@
 
 <body>
     <div class="container page page--form">
+      
         ${require(`./partials/mobile-menu.html`)}
         ${require(`./partials/top-menu.html`)}
         ${require(`./partials/hero.html`)}
 
-        <form action="/" class="form page__form">
+        <form action="/" class="form page__form" novalidate>
+            ${require(`./partials/popup.html`)}
+            <div class="section form__textual">
+                <h2 class="form__header form__textual-header">
+                    Оставьте свой отзыв
+                </h2>
 
-        <div class="section form__textual">
-            <h2 class="form__header form__textual-header">
-                Оставьте свой отзыв
-            </h2>
-
-            <p class="form__textual-text">
-                Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-                достопримечательностях
-            </p>
-        </div>
-        <div class="section form__section form__name name-form-section">
-            <h2 class="form__header name-form-section__header">
-                Представьтесь
-            </h2>
-            <div class="name-form-section__field">
-                <label for="" class="form__label name-form-section__label">
-                    Имя*
-                </label>
-                <input type="text" class="form__input form__text-input name-form-section__input" placeholder="Петр">
+                <p class="form__textual-text">
+                    Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+                    достопримечательностях
+                </p>
             </div>
-            <div class="name-form-section__field">
-                <label for="" class="form__label name-form-section__label">
-                    Фамилия*
-                </label>
-                <input type="text" class="form__input form__text-input name-form-section__input" placeholder="Иванов">
-            </div>
-            <div class="name-form-section__field">
-                <label for="" class="form__label name-form-section__label">
-                    Отчество
-                </label>
-                <input type="text" class="form__input form__text-input name-form-section__input" placeholder="Александрович">
-            </div>
-        </div>
-        <div class="section form__section form__contacts contacts-form-section">
-            <h2 class="form__header contacts-form-section__header form__header--center-aligned">
-                Контактная информация
-            </h2>
-            <div class="contacts-form-section__field contacts-form-section__field--phone">
-                <label for="" class="form__label contacts-form-section__label">
-                    <span class="form__contact-word">Контактный</span> телефон*:
-                </label>
-                <div class="contacts-form-section__input-wrapper contacts-form-section__input-wrapper--phone">
-                    <input type="text" class="form__input form__text-input contacts-form-section__input" placeholder="Введите телефон">
+            <div class="section form__section form__name name-form-section">
+                <h2 class="form__header name-form-section__header">
+                    Представьтесь
+                </h2>
+                <div class="name-form-section__field">
+                    <label for="" class="form__label name-form-section__label">
+                        Имя*
+                    </label>
+                    <input type="text" class="form__input form__text-input name-form-section__input" placeholder="Петр"
+                        required>
+                </div>
+                <div class="name-form-section__field">
+                    <label for="" class="form__label name-form-section__label">
+                        Фамилия*
+                    </label>
+                    <input type="text" class="form__input form__text-input name-form-section__input" placeholder="Иванов"
+                        required>
+                </div>
+                <div class="name-form-section__field">
+                    <label for="" class="form__label name-form-section__label">
+                        Отчество
+                    </label>
+                    <input type="text" class="form__input form__text-input name-form-section__input" placeholder="Александрович">
                 </div>
             </div>
-            <div class="contacts-form-section__field contacts-form-section__field--email">
-                <label for="" class="form__label contacts-form-section__label">
-                    Электронная почта*:
-                </label>
-                <div class="contacts-form-section__input-wrapper contacts-form-section__input-wrapper--email">
-                    <input type="text" class="form__input form__text-input contacts-form-section__input" placeholder="Введите e-mail">
+            <div class="section form__section form__contacts contacts-form-section">
+                <h2 class="form__header contacts-form-section__header form__header--center-aligned">
+                    Контактная информация
+                </h2>
+                <div class="contacts-form-section__field contacts-form-section__field--phone">
+                    <label for="" class="form__label contacts-form-section__label">
+                        <span class="form__contact-word">Контактный</span> телефон*:
+                    </label>
+                    <div class="contacts-form-section__input-wrapper contacts-form-section__input-wrapper--phone">
+                        <input type="tel" class="form__input form__text-input contacts-form-section__input" placeholder="Введите телефон"
+                            required>
+                    </div>
                 </div>
-            </div>
+                <div class="contacts-form-section__field contacts-form-section__field--email">
+                    <label for="" class="form__label contacts-form-section__label">
+                        Электронная почта*:
+                    </label>
+                    <div class="contacts-form-section__input-wrapper contacts-form-section__input-wrapper--email">
+                        <input type="email" class="form__input form__text-input contacts-form-section__input"
+                            placeholder="Введите e-mail" required>
+                    </div>
+                </div>
             </div>
             <div class="section form__section form__impression impression-form-section">
                 <h2 class="form__header impression-form-section__header">
@@ -151,20 +156,21 @@
                 <h2 class="form__header feedback-form-section__header form__header--center-aligned">
                     Опишите свои эмоции
                 </h2>
-                <textarea name="feedback" id="" cols="30" placeholder="Опишите подробно все свои восторги" rows="10" class="form__textarea feedback-form-section__textarea"></textarea>
+                <textarea name="feedback" id="" cols="30" placeholder="Опишите подробно все свои восторги" rows="10"
+                    class="form__textarea feedback-form-section__textarea"></textarea>
             </div>
             <div class="form__section form__bottom section">
-                <button class="form__submit button-squire">
+                <button class="form__submit button-squire js-submit-button">
                     отправить отзыв
                 </button>
                 <p class="form__required-fields">
                     * — обязательные поля
                 </p>
             </div>
-            </form>
+        </form>
 
-            ${require(`./partials/footer.html`)}
-        </div>
+        ${require(`./partials/footer.html`)}
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,9 @@
+@mixin blue-styles {
+    &:hover {
+        background-color: $medium-blue;
+    }
+
+    &:active {
+        background-color: $dark-blue;
+    }
+}

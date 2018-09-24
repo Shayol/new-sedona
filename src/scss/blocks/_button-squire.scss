@@ -12,4 +12,10 @@
     font-weight: 700;
     font-family: 'PT Sans';
     text-align: center;
+
+    @include blue-styles;
+
+    &:active {
+        color: hsla(0, 100%, 100%, 0.3);
+    }
 }

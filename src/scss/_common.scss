@@ -12,11 +12,14 @@
     font-style: normal;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: 'PT Sans';
@@ -29,7 +32,11 @@ body {
 }
 
 $blue: #81b3d2;
+$medium-blue: #669ec0;
+$dark-blue: #5496bd;
 $grey: #f2f2f2;
+$medium-grey: #e5e5e5;
+$dark-grey: #d5d5d5;
 
 $tablet: 768px;
 $desktop: 1200px;

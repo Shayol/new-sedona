@@ -39,6 +39,14 @@
             height: 55px;
             background-color: $grey;
         }
+
+        &:hover::before {
+            background-color: $medium-grey;
+        }
+
+        &:active::before {
+            background-color: $dark-grey;
+        }
     }
 
     &__check {
@@ -55,6 +63,10 @@
 
     &__radio:checked~&__check {
         visibility: visible;
+    }
+
+    &__radio:active~&__check {
+        opacity: 0.3;
     }
 
     @media(min-width: $tablet) {
@@ -86,7 +98,7 @@
         &__label {
             padding-left: 0;
         }
-     }
+    }
 
 
 }

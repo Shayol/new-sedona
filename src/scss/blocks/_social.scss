@@ -1,6 +1,7 @@
 .social {
     display: flex;
     justify-content: center;
+
     &__icon {
         height: 48px;
         width: 46px;
@@ -8,9 +9,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include blue-styles;
     }
 
-    &__icon + &__icon {
+    &__icon+&__icon {
         margin-left: 6px;
+    }
+
+    &__img:active {
+        opacity: 0.3;
     }
 }

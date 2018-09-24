@@ -38,6 +38,14 @@
             height: 55px;
             background-color: $grey;
         }
+
+        &:hover::before {
+            background-color: $medium-grey;
+        }
+
+        &:active::before {
+            background-color: $dark-grey;
+        }
     }
 
     &__check {
@@ -57,6 +65,10 @@
         visibility: visible;
     }
 
+    &__radio:active~&__check {
+        opacity: 0.3;
+    }
+
     @media (min-width: $tablet) {
         &__content {
             display: flex;
@@ -74,12 +86,14 @@
             width: 50%;
             justify-content: flex-start;
             white-space: nowrap;
-            &:nth-child(3), &:nth-child(4) {
+
+            &:nth-child(3),
+            &:nth-child(4) {
                 padding-left: 7%;
             }
         }
 
-        &__field + &__field {
+        &__field+&__field {
             padding-top: 0;
         }
 
@@ -104,7 +118,8 @@
             height: 100%;
             width: 25%;
 
-            &:nth-child(3), &:nth-child(4) {
+            &:nth-child(3),
+            &:nth-child(4) {
                 padding-left: 0;
             }
         }

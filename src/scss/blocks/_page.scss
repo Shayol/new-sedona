@@ -9,7 +9,8 @@
         }
     }
 
-    &\--form {
+    &\--form,
+    &\--photos {
         .page__hero {
             height: 160px;
             background-position: 50% 100%;
@@ -57,7 +58,8 @@
             }
         }
 
-        &\--form {
+        &\--form,
+        &\--photos {
             .page__hero {
                 height: 290px;
             }
@@ -66,12 +68,47 @@
         &__footer {
             height: initial;
         }
+
+        &__video {
+            padding-left: 60px;
+            padding-right: 60px;
+            margin-bottom: 40px;
+        }
     }
 
     @media(min-width: $desktop) {
-        &\--form {
-            .page__hero { 
+
+        &\--form,
+        &\--photos {
+            .page__hero {
                 height: 300px;
+            }
+        }
+
+        &__video {
+            max-width: 800px;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 85px;
+        }
+
+        &\--photos {
+            .footer {
+                max-width: 1200px;
+
+                &__item {
+                    width: 33.33%;
+                }
+
+                &__header {
+                    margin-left: 0;
+                    text-align: center;
+                }
+
+                &__developed-by {
+                    margin-right: 0;
+                }
             }
         }
     }

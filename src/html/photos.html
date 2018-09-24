@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photos</title>
+</head>
+
+<body>
+    <div class="container page page--photos">
+        ${require(`./partials/mobile-menu.html`)}
+        ${require(`./partials/top-menu.html`)}
+        ${require(`./partials/hero.html`)}
+
+        <div class="textual textual--photos-top section">
+            <h2 class="textual__header textual__header--small-padding textual__header--font-size header header--big">
+                Фото и видео
+            </h2>
+            <p class="textual__text section-text textual__text--line-height">
+                Не можете решиться на путешествие из-за курса? <br class="break break--invisible-on-mobile"> Фотографии
+                помогут <br class="break break--invisible-on-tablet"> вам забыть о политике и экономике.
+            </p>
+        </div>
+
+        <div class="photos section">
+            <div class="photos__item photos__item--full-width photo">
+                <div class="photo__photo-wrapper">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="../img/photo-1-desktop.png">
+                        <source media="(min-width: 768px)" srcset="../img/photo-1-tablet.png">
+                        <img src="../img/photo-1-mobile.png" alt="" class="photo__img">
+                    </picture>
+                </div>
+                <div class="photo__content">
+                    <div class="photo__desc">
+                        <h3 class="photo__name">
+                            неродные просторы
+                        </h3>
+                        <p class="photo__author">
+                            Автор фото: Борис
+                        </p>
+                    </div>
+                    <div class="photo__like-wrapper">
+                        <img src="../icons/like-icon.svg" alt="" class="photo__like-icon">
+                        <div class="photo__like-number">1350</div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos__item photo">
+                <div class="photo__photo-wrapper">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="../img/photo-2-desktop.png">
+                        <source media="(min-width: 768px)" srcset="../img/photo-2-tablet.png">
+                        <img src="../img/photo-2-mobile.png" alt="" class="photo__img">
+                    </picture>
+                </div>
+                <div class="photo__content">
+                    <div class="photo__desc">
+                        <h3 class="photo__name">
+                            Местная растительность
+                        </h3>
+                        <p class="photo__author">
+                            Автор фото: Сергей
+                        </p>
+                    </div>
+                    <div class="photo__like-wrapper">
+                        <img src="../icons/like-icon.svg" alt="" class="photo__like-icon">
+                        <div class="photo__like-number">143</div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos__item photo">
+                <div class="photo__photo-wrapper">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="../img/photo-3-desktop.png">
+                        <source media="(min-width: 768px)" srcset="../img/photo-3-tablet.png">
+                        <img src="../img/photo-3-mobile.png" alt="" class="photo__img">
+                    </picture>
+                </div>
+                <div class="photo__content">
+                    <div class="photo__desc">
+                        <h3 class="photo__name">
+                            Дорога на север
+
+                        </h3>
+                        <p class="photo__author">
+                            Автор фото: Петр
+                        </p>
+                    </div>
+                    <div class="photo__like-wrapper">
+                        <img src="../icons/like-icon.svg" alt="" class="photo__like-icon">
+                        <div class="photo__like-number">96</div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos__item photo">
+                <div class="photo__photo-wrapper">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="../img/photo-4-desktop.png">
+                        <source media="(min-width: 768px)" srcset="../img/photo-4-tablet.png">
+                        <img src="../img/photo-4-mobile.png" alt="" class="photo__img">
+                    </picture>
+                </div>
+                <div class="photo__content">
+                    <div class="photo__desc">
+                        <h3 class="photo__name">
+                            Мост дьявола
+                        </h3>
+                        <p class="photo__author">
+                            Автор фото: Антон
+                        </p>
+                    </div>
+                    <div class="photo__like-wrapper">
+                        <img src="../icons/like-icon.svg" alt="" class="photo__like-icon">
+                        <div class="photo__like-number">254</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section textual textual--photos-bottom">
+            <h2 class="textual__header textual__header--small-padding textual__header--font-size header header--big">
+                Все еще сомневаетесь?
+            </h2>
+            <p class="textual__text textual__text--line-height section-text">
+                Смотрите видеопрезентацию и <br class="break break--invisible-on-tablet"> скорее за билетами, пока <br
+                    class="break break--invisible-on-mobile"> они
+                не подорожали в очередной раз!
+            </p>
+        </div>
+        <div class="page__video video">
+            <iframe class="video__tag" src="https://www.youtube.com/embed/tzS7CaGzlko?showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+        ${require(`./partials/footer.html`)}
+    </div>
+</body>
+
+</html>

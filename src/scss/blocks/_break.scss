@@ -8,7 +8,11 @@
         &\--visible-on-mobile {
             display: none;
         }
-        
+
+        &\--invisible-on-tablet {
+            display: none;
+        }
+
         &\--invisible-on-mobile {
             display: initial;
         }
@@ -19,5 +23,5 @@
             display: none;
         }
     }
-    
+
 }

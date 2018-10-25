@@ -1,8 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const postcssPresetEnv = require('postcss-preset-env');
 
 
 module.exports = {
@@ -53,7 +51,7 @@ module.exports = {
               sourceMap: true,
               ident: 'postcss',
               plugins: () => [
-                postcssPresetEnv(/* options */)
+                require("autoprefixer")()
               ]
             }
           },
